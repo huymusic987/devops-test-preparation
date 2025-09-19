@@ -1,0 +1,17 @@
+ssh -i "macbook.pem" ec2-user@<public-dns>
+
+# change hostname
+
+sudo -i
+
+echo "new-host-name" > /etc/hostname
+
+reboot
+
+# exec script
+
+curl -O <raw-url>
+
+chmod +x filename.sh
+
+./filename.sh

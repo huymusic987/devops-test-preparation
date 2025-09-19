@@ -1,0 +1,13 @@
+change admin user password
+
+Plugins
+
+Github
+
+NodeJS
+
+Publish Over SSH
+
+config tools
+
+set time zone asia pacific
