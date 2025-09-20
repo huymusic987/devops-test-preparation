@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo su -
-
 echo "tmpfs /tmp tmpfs defaults,size=5G 0 0" | sudo tee -a /etc/fstab
 
 mount -o remount /tmp
@@ -10,7 +8,7 @@ wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenki
 
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
-yum install -y fontconfig java-17-amazon-corretto jenkins docker git
+yum install -y fontconfig java-17-amazon-corretto jenkins docker git ansible
 
 usermod -aG docker jenkins
 
@@ -35,5 +33,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 # Confirm installation
 docker-compose --version
 
-echo "Jenkins, Docker, Docker Compose installed"
+echo "Jenkins, Docker installed"
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
 

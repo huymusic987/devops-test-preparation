@@ -1,12 +1,22 @@
+security groups:
+
+port 22, 8080 anywhere
+
+curl -O https://raw.githubusercontent.com/huymusic987/devops-test-preparation/refs/heads/main/install_jenkins.sh
+
+cat /var/lib/jenkins/secrets/initialAdminPassword
+
 change admin user password
 
 Plugins
+
+publish over ssh
 
 Github
 
 NodeJS
 
-Publish Over SSH
+SSH server
 
 config tools
 

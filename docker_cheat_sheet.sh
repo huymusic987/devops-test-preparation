@@ -30,6 +30,8 @@ docker kill $(docker ps -q)
 # remove all containers
 docker rm $(docker ps -a -q)
 
+docker system prune
+
 # list all containers status
 
 docker ps -a
