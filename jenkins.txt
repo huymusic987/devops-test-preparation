@@ -16,8 +16,47 @@ Github
 
 NodeJS
 
-SSH server
+maven integration
 
 config tools
 
+add jdk
+
+JDK 17
+
+/usr/lib/jvm/java-17-amazon-corretto.x86_64
+
+add maven
+
+Maven
+
+/opt/maven
+
+clean install
+
+ssh server
+
 set time zone asia pacific
+
+cd /opt
+
+wget https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.tar.gz 
+
+tar -xvzf apache-maven-3.9.11-bin.tar.gz
+
+rm -rf apache-maven-3.9.11-bin.tar.gz
+
+mv apache-maven-3.9.11 maven
+
+cd ~
+
+nano ~/.bash_profile
+
+export M2_HOME=/opt/maven
+export M2=/opt/maven/bin
+export JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto.x86_64
+export PATH=\$PATH:\$HOME/bin:\$JAVA_HOME:\$M2_HOME:\$M2
+
+source ~/.bash_profile
+
+https://github.com/TomHuynhSG/simple-webapp-cosc2767

@@ -4,7 +4,7 @@ ssh -i "macbook.pem" ec2-user@<public-dns>
 
 sudo -i
 
-echo "new-host-name" > /etc/hostname
+echo "jenkins" > /etc/hostname
 
 reboot
 

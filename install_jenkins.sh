@@ -24,7 +24,7 @@ systemctl start docker
 
 systemctl start jenkins
 
-echo "Jenkins, Docker installed"
+echo "Maven, Jenkins, Docker installed"
 
 cat /var/lib/jenkins/secrets/initialAdminPassword
 
